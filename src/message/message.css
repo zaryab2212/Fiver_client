@@ -1,0 +1,53 @@
+/* .messsages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin-top: 10px;
+  gap: 20px;
+  height: 500px;
+  min-width: 80vw;
+}
+.item {
+  display: flex;
+  gap: 20px;
+  max-width: 600px;
+  flex-direction: row;
+  font-size: 18px;
+  &&.owner {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+}
+.owner > p {
+  border-radius: 20px 20px 0px 20px;
+  background-color: blue;
+  color: aliceblue;
+}
+.item &&.owner {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  background-color: black;
+
+  color: white;
+  border-radius: 0px 20px 20px 20px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+p {
+  padding: 20px;
+  background-color: aquamarine;
+  border-radius: 0px 20px 20px 20px;
+  border: 1px solid gray;
+}
+textarea {
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid rebeccapurple;
+  border-radius: 10px;
+  margin-right: 20px;
+} */

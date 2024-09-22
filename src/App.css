@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+
+.logo {
+  font-weight: 700;
+  font-weight: bolder;
+  margin: 1rem;
+  font-size: 2rem;
+  /* color: aliceblue; */
+}
+.activelogo {
+  font-weight: 700;
+  font-weight: bolder;
+  margin: 1rem;
+  font-size: 2rem;
+  color: aliceblue !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: blue;
+
+  align-items: space-between;
+  justify-content: space-between;
+  transition: 200ms ease-in;
+}
+.activeNav {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+
+  background-color: rgb(25 135 84) !important;
+
+  align-items: space-between;
+  justify-content: space-between;
+  transition: 200ms ease-in;
+}
+
+nav > div > ul > li {
+  font-weight: 700;
+  font-size: 1.1rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  /* color: aliceblue; */
+}
+.activeNav > div > ul > li {
+  font-weight: 700;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.activeNav > div > ul > li > a {
+  color: aliceblue !important;
 }
 
-.App-link {
-  color: #61dafb;
+nav > div > ul > li > a > button {
+  margin: 0.3rem 0.5rem;
+  padding: 0.1rem 0.8rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.activeNav > div > ul > li > a > button {
+  margin: 0.3rem 0.5rem;
+  padding: 0.1rem 0.8rem;
+  color: rgb(25 135 84);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userProfileImg{
+  width: 4rem;
+  height: 4rem;
+  z-index: 333;
+  border: none;
+  border: 1px solid rgb(25 135 84);
+  border-radius: 50%;
+  margin: 0px .5rem;}
+
+/* //Feater css */
+.main-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(15, 6, 48);
 }
+.frelance {
+  font-weight: bolder;
+  color: rgb(25 135 84);
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 2.3rem;
+}
+.main-icon {
+  margin-right: -3rem;
+  z-index: 22;
+}
+.search-btn {
+  color: aliceblue;
+  border: none;
+  margin-left: -5.1rem;
+  border-radius: none;
+  background-color: rgb(25 135 84);
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+}
+.popular-text {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.popular-btn {
+  border: 0.09rem solid rgb(204, 195, 219);
+  border-radius: 10%;
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: black;
+  padding: 0.2rem 0.4rem;
+  margin: 0.2rem;
+}
+
+.main-left{
+width:50%;
+  margin: auto;
+}
+.imgd{
+  width: 30rem ;
+  height: 30rem;
+}
+
+/* //trusted by  */
+
+.card-desc {
+  margin-bottom: 1.2rem;
+}
+.vid{
+  width: 40rem;
+  height: 25rem;
+}
+
+.bussniess-img{
+  width: 30rem;
+  height: 18rem;
+}
+
+.allGigs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+@media screen and (max-width: 760px) {
+  .sm-feature{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.main-left {
+  width: 100%;
+  margin-top: 1rem;
+
+}
+  .sm-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22rem;
+  height: 17rem;
+  }
+
+  .sm-dec{
+  padding: 1px;
+  margin: 1px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;}
+
+ .vid{
+  width: 21rem;
+  height: 16rem;
+  margin: 1px ;
+  padding: 1px 1px;
+} 
+
+.sm-fiver-bussniess{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bussniess-img{
+  width: 21rem;
+  height: 17rem;
+  padding: 2px;
+}
+
+.allGigs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.menuu{
+  
+  background-color: aqua;
+  display: none !important;
+}
+
+}
+
+  
+
